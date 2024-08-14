@@ -1,0 +1,337 @@
+@model List<Feedback>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home - STEMIUM</title>
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+
+    <style>
+        .testimonial-content {
+            height: 200px; /* Set a fixed height for the card */
+            overflow: auto; /* Enable scrolling if content exceeds the fixed height */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
+        <div class="row align-items-center px-3">
+            <div class="col-lg-6 text-center text-lg-left" style="margin-top:20px;margin-bottom:20px;">
+                <h4 class="text-white mb-4 mt-5 mt-lg-0">STEM Learning Center</h4>
+                <h1 class="display-3 font-weight-bold text-white">New Approach to Education</h1>
+                <p class="text-white mb-4">
+                    Discover the boundless potential of STEM education!
+                    By embracing science, technology, engineering, and mathematics,
+                    educators embark on a journey of skill development and innovation.
+                    With a curriculum that encompasses core courses, dynamic electives,
+                    and hands-on extracurricular activities like robotics and coding,
+                    teachers have the opportunity to inspire a new generation of thinkers and creators.
+                    Join us in unlocking the endless possibilities of STEM and shaping the future of education!
+                </p>
+                <a asp-action="AboutUs" asp-controller="Home" class="btn btn-secondary mt-1 py-3 px-5">Learn More</a>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <img class="img-fluid mt-5" style="margin-bottom:70px" src="img/StemLand1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    <!-- Facilities Start -->
+    <div class="container-fluid pt-5">
+        <div class="col-lg-7 mb-5 mb-lg-0" style="margin-left:400px;margin-top:-30px;">
+            <p class="section-title px-5" style="margin-left:40px;"><span class="px-2">Our Services</span></p>
+        </div>
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding:30px;">
+                        <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Activities</h4>
+                            <p class="m-0">
+                                Here's a diverse selection of interactive classroom activities, complete with steps, materials, and estimated time, ready for engaging learning experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Resources</h4>
+                            <p class="m-0">Everything explained must come from a trustful source here you can find all the trustful sources to widen knowledge .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Explanations</h4>
+                            <p class="m-0">If you wonder how to teact as a stem teacher here we explain the lesson as if we are in a simulation of the real teaching experience. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Lesson plans</h4>
+                            <p class="m-0">Discover STEM lesson plans designed by educators using active learning. Choose what suits you best. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Questions & Inquries</h4>
+                            <p class="m-0">All the questions you might seek on this lesson is here you don't have to waste time searching.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Teaching strategies</h4>
+                            <p class="m-0">All the active learning strategies explained step by step with instructions and use of each with estimated time .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1" style="height:250px;">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Evaluation</h4>
+                            <p class="m-0">Different methods of evaluation (exams and quizzes - game based quizzes) .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1" style="height:250px;">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Worksheets</h4>
+                            <p class="m-0">All the paper work you might need as a homework or tasks during the session.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1" style="height:250px;">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Parent guide</h4>
+                            <p class="m-0">We provide a guide for parents to teach lesson step by step at home as a stem teacher .</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Facilities Start -->
+    <!-- Vision Start -->
+    <div class="container-fluid py-9">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-7" style="margin-left:480px;">
+                    <p class="section-title px-5"><span class="px-3">Our Vision</span></p>
+
+                    <div style="margin-left:-480px;margin-bottom:-250px">
+
+                        <h1 class="col-6 col-md-7">Our vision is to improve lives through STEM education</h1>
+                        <div class="row pt-2 pb-4">
+                            <div class="col-6 col-md-2" style="margin-left:20px;">
+
+                                <img class="img-fluid rounded" src="img/stem2.jpg" alt="" style="margin-top:20px;">
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <ul class="list-inline m-0">
+                                    <li class="py-2 border-top border-bottom">
+                                        <i class="fa fa-check text-primary mr-3"></i>Open eyes to education related to real life proplems .
+                                    </li>
+                                    <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Empower skills and language to be ready for the competition of labor market.</li>
+                                    <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i>Assist Egypt's educational system in becoming more sophisticated so that it can compete globally.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <p class="col-6 col-md-5" style="position:relative;bottom:300px;left:700px;">
+                            Our platform makes it easy for any beginner teacher or student to teach, prepare, and present sessions that drive compelling engagement by stem approach .
+                            All your dreams as a teacher has come to be true !
+                            What you seek is ready Infront of your eyes !!
+                            Lesson plans, resources, activities, questions, presentations , different teaching strategies and more in the treasurer box to discover.
+                            STEMIUM! can be entered anywhere,anytime
+                            with full abilities free nothing is out of your lead using any device with an internet connection.
+                            Be a part of our family and sign up for your own good .
+                        </p>
+
+                    </div>
+                    @* <a href="" class="btn btn-primary mt-2 py-2 px-4">Learn More</a> *@
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vision End -->
+    @*  <!-- Team Start -->
+    <div class="container-fluid pt-5">
+    <div class="container">
+    <div class="text-center pb-2">
+    <p class="section-title px-5"><span class="px-2">Our Teachers</span></p>
+    <h1 class="mb-4">Meet Our Teachers</h1>
+    </div>
+    <div class="row">
+    <div class="col-md-6 col-lg-3 text-center team mb-5">
+    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+    <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+    <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-twitter"></i></a>
+    <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-facebook-f"></i></a>
+    <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    </div>
+    <h4>Julia Smith</h4>
+    <i>Music Teacher</i>
+    </div>
+    <div class="col-md-6 col-lg-3 text-center team mb-5">
+    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+    <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+    <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-twitter"></i></a>
+    <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-facebook-f"></i></a>
+    <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    </div>
+    <h4>Jhon Doe</h4>
+    <i>Language Teacher</i>
+    </div>
+    <div class="col-md-6 col-lg-3 text-center team mb-5">
+    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+    <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+    <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-twitter"></i></a>
+    <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-facebook-f"></i></a>
+    <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    </div>
+    <h4>Mollie Ross</h4>
+    <i>Dance Teacher</i>
+    </div>
+    <div class="col-md-6 col-lg-3 text-center team mb-5">
+    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
+    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
+    <div class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
+    <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-twitter"></i></a>
+    <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-facebook-f"></i></a>
+    <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
+    href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    </div>
+    <h4>Donald John</h4>
+    <i>Art Teacher</i>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Team End --> *@
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container p-0">
+            <div class="text-center pb-2">
+                <p class="section-title px-5"><span class="px-2">Testimonial</span></p>
+                <h1 class="mb-4">What Users Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                @foreach (var feedback in Model)
+                {
+                    if (feedback.Visible)
+                    {
+                        <div class="testimonial-item px-3">
+
+                            @{
+                                // Get user's name from feedback's User navigation property
+                                var userName = feedback.User?.Name ?? "Unknown";
+                            }
+                            <h5>@userName</h5>
+                            <div class="testimonial-content bg-light shadow-sm rounded mb-4 p-4">
+                                <h3 class="fas fa-quote-left text-primary mr-3"></h3>
+                                <p>@feedback.FeedbackContent</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="pl-3">
+
+
+                                    @{
+                                        // Generate star icons based on rating value
+                                        var stars = "";
+                                        for (int i = 0; i < feedback.Rate; i++)
+                                        {
+                                            stars += "<i class='fas fa-star text-warning'></i>";
+                                        }
+                                    }
+                                    <p><b>Rating<br>@Html.Raw(stars)</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+
+        </div>
+    </div>
+
+    @section Scripts {
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.testimonial-carousel').owlCarousel({
+                    loop: true,
+                    margin: 30,
+                    autoplay: true, // Enable autoplay
+                    autoplayTimeout: 2000, // Autoplay interval in milliseconds (3 seconds in this example)
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        768: {
+                            items: 2
+                        },
+                        992: {
+                            items: 3
+                        }
+                    }
+                });
+            });
+        </script>
+    }
+
+
+    <!-- Testimonial End -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+</body>
+
+</html>
